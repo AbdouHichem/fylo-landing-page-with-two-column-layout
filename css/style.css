@@ -15,4 +15,221 @@
 .attribution a {
   color: #1a2b89;
 }
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+header,
+main,
+footer {
+  width: 95%;
+  max-width: 380px;
+}
+
+ul {
+  list-style: none;
+}
+
+main .SecondSection {
+  padding: 2rem;
+  margin-top: 3rem;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #f6f6fe;
+}
+
+main .SecondSection img {
+  width: 100%;
+}
+
+main .SecondSection .topbg {
+  position: absolute;
+  top: -43px;
+  right: 0;
+}
+
+main .SecondSection .Details {
+  padding: 2rem 0rem;
+  margin-top: 3rem;
+}
+
+main .SecondSection .Details h4 {
+  color: #070439;
+  text-align: center;
+  margin: 2rem 0rem;
+}
+
+main .SecondSection .Details p {
+  color: #bfbfbf;
+}
+
+main .SecondSection .SeeHowWorks {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin: 3rem 0rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 1px solid #3c9f8f;
+}
+
+main .SecondSection .SeeHowWorks p {
+  color: #3c9f8f;
+  display: inline-block;
+  padding-right: 1rem;
+}
+
+main .SecondSection .SeeHowWorks img {
+  width: 20px;
+}
+
+main .SecondSection .quoteCard {
+  width: 100%;
+  background-color: white;
+  padding: 1rem;
+}
+
+main .SecondSection .quoteCard img {
+  width: 14px;
+}
+
+main .SecondSection .quoteCard blockquote {
+  font-size: .8rem;
+  margin: 1rem 0rem;
+}
+
+main .SecondSection .quoteCard .author {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .SecondSection .quoteCard .author img {
+  width: 50px;
+  border-radius: 3rem;
+  margin-right: 1.5em;
+}
+
+main .SecondSection .quoteCard .author .name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main .SecondSection .quoteCard .author .name h4 {
+  margin: 0rem;
+}
+
+main .SecondSection .quoteCard .author .name p {
+  font-size: .7rem;
+  color: #070439;
+}
+
+main .ThirdSection {
+  text-align: center;
+  background-color: #585989;
+  padding: 3rem 4rem;
+  color: #f6f6fe;
+}
+
+main .ThirdSection h3 {
+  margin: 1rem 0rem;
+}
+
+main .ThirdSection p {
+  font-size: .8rem;
+  margin: 1rem 0rem;
+  line-height: 1.2rem;
+}
+
+main .ThirdSection input {
+  padding: .5rem 1rem;
+  width: 260px;
+}
+
+main .ThirdSection button {
+  background-color: #3065f8;
+  border: none;
+  padding: .5rem 4rem;
+  margin-top: .5rem;
+  color: #f6f6fe;
+  width: 260px;
+}
+
+footer {
+  padding: 3rem 3rem;
+  background-color: #070439;
+  color: #bfbfbf;
+}
+
+footer .icons {
+  display: inline-block;
+  margin-right: 1rem;
+}
+
+footer ul {
+  margin: 3rem 0rem;
+}
+
+footer li {
+  margin: .5rem 0rem;
+}
+
+footer .social-icons {
+  text-align: center;
+}
+
+footer .icon:hover {
+  color: #3065f8;
+  cursor: pointer;
+}
 /*# sourceMappingURL=style.css.map */

@@ -1,1 +1,156 @@
 @import "config";
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+header,
+main,
+footer {
+  width: 95%;
+  max-width: 380px;
+}
+
+ul {
+  list-style: none;
+}
+main {
+  .SecondSection{
+    padding:2rem;
+    margin-top: 3rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content:center;
+    background-color:$Light-Grayish-Blue;
+    img{
+      width:100%;
+
+    }
+    .topbg{
+      position: absolute;
+      top: -43px;
+      right:0;
+    }
+    .Details{
+      padding:2rem 0rem;
+      margin-top:3rem;
+      h4{
+        color:$Very-Dark-Blue;
+        text-align: center;
+        margin: 2rem 0rem;
+      }
+      p{
+        color: $Light-Gray;
+      }
+    }
+    .SeeHowWorks{
+      text-align: center;
+      display: flex;
+      width:max-content;
+      margin: 3rem 0rem;
+      justify-content: center;
+      align-items: center;
+      border-bottom : 1px solid $Moderate-Cyan;
+      p{
+        color: $Moderate-Cyan;
+        display: inline-block;
+        padding-right: 1rem;
+
+      }
+      img{
+        width: 20px;
+      }
+    }
+    .quoteCard{
+      width:100%;
+      background-color:white;
+      padding: 1rem;
+      img{
+        width:14px;
+      }
+      blockquote{
+        font-size: .8rem;
+        margin: 1rem 0rem;
+      }
+      .author{
+        display:flex;
+        justify-content:flex-start;
+        align-items:center;
+        img{
+          width: 50px;
+          border-radius: 3rem;
+          margin-right: 1.5em;
+        }
+        .name{
+          display: flex;
+          justify-content:center;
+          align-items:flex-start;
+          flex-direction: column;
+          h4{
+            margin: 0rem;
+          }
+          p{
+            font-size: .7rem;
+            color:$Very-Dark-Blue;
+          }
+        }
+      }
+    }
+  }
+  .ThirdSection {
+    text-align: center;
+    background-color:$Desaturated-Blue;
+    padding: 3rem 4rem;
+    color: $Light-Grayish-Blue;
+    
+    h3{
+      
+      margin: 1rem 0rem;
+    }
+    p{
+      font-size:.8rem;
+      margin: 1rem 0rem;
+      line-height:1.2rem;
+    }
+    input{
+      padding:.5rem 1rem;
+      width: 260px;
+    }
+    button{
+      background-color:$Bright-Blue;
+      border: none;
+      padding: .5rem 4rem;
+      margin-top: .5rem;
+      color: $Light-Grayish-Blue;
+      width: 260px;
+    }
+  }
+}
+footer{
+  padding: 3rem 3rem;
+  background-color: $Very-Dark-Blue;
+  color:$Light-Gray;
+  .icons{
+    display: inline-block;
+    margin-right: 1rem;
+  }
+  ul{
+    margin: 3rem 0rem;
+  }
+  li{
+    margin: .5rem 0rem;
+  
+  }
+  .social-icons{
+    text-align: center;
+    
+  }
+  .icon:hover{
+      color: $Bright-Blue;
+      cursor: pointer;
+    }
+}
