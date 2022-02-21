@@ -108,6 +108,10 @@ main .FirstSection button {
   width: 85%;
 }
 
+main .FirstSection button:hover {
+  background-color: #6b8fef;
+}
+
 main .SecondSection {
   padding: 2rem;
   margin-top: 3rem;
@@ -277,6 +281,10 @@ main .ThirdSection button {
   margin-top: 0.5rem;
   color: #f6f6fe;
   width: 85%;
+}
+
+main .ThirdSection button:hover {
+  background-color: #6b8fef;
 }
 
 footer {

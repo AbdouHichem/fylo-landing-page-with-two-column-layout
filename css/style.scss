@@ -62,6 +62,9 @@ main {
       margin-top: 0.5rem;
       color: $Light-Grayish-Blue;
       width: 85%;
+      &:hover{
+        background-color:hsl(224, 81%, 68%);
+      }
     }
   }
   .SecondSection {
@@ -178,6 +181,9 @@ main {
       margin-top: 0.5rem;
       color: $Light-Grayish-Blue;
       width: 85%;
+      &:hover{
+        background-color:hsl(224, 81%, 68%);
+      }
     }
   }
 }
