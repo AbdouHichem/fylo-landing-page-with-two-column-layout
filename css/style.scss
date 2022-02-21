@@ -18,7 +18,7 @@ ul {
 }
 header {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   padding: 2rem 0rem;
   img {
@@ -31,6 +31,7 @@ header {
     color: $Desaturated-Blue;
   }
 }
+
 main {
   .FirstSection {
     padding: 2rem;
@@ -62,8 +63,8 @@ main {
       margin-top: 0.5rem;
       color: $Light-Grayish-Blue;
       width: 85%;
-      &:hover{
-        background-color:hsl(224, 81%, 68%);
+      &:hover {
+        background-color: hsl(224, 81%, 68%);
       }
     }
   }
@@ -181,12 +182,13 @@ main {
       margin-top: 0.5rem;
       color: $Light-Grayish-Blue;
       width: 85%;
-      &:hover{
-        background-color:hsl(224, 81%, 68%);
+      &:hover {
+        background-color: hsl(224, 81%, 68%);
       }
     }
   }
 }
+
 footer {
   padding: 3rem 3rem;
   background-color: $Very-Dark-Blue;
@@ -207,5 +209,387 @@ footer {
   .icon:hover {
     color: $Bright-Blue;
     cursor: pointer;
+  }
+}
+
+@media (min-width: 768px) {
+  header,
+  main,
+  footer {
+    width: 100%;
+    max-width: 100%;
+  }
+  body {
+    font-size: 20px;
+  }
+  header {
+    display: flex;
+    align-items: center;
+    padding: 2rem 2rem;
+    img {
+      width: 20%;
+    }
+  }
+
+  main {
+    padding: 0rem;
+    .FirstSection {
+      
+      text-align: start;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img {
+        width: 50%;
+        margin-bottom: 2rem;
+        order: 2;
+      }
+      .Title {
+        h1 {
+          margin: 2rem 0rem;
+          font-size: 1.5rem;
+        }
+        p {
+          color: $Desaturated-Blue;
+          line-height: 2;
+          font-size: 0.8rem;
+          margin-bottom: 2rem;
+        }
+        .Form {
+          display: flex;
+          justify-content: start;
+          align-items: center;
+          input {
+            padding: 0.7rem 1rem;
+            width: auto;
+            height: auto;
+          }
+          button {
+            padding: 0.5rem 0.5rem;
+            margin-left: 0.5rem;
+            margin-top: 0rem;
+            color: $Light-Grayish-Blue;
+            width: auto;
+          }
+        }
+      }
+    }
+    .SecondSection {
+      padding: 0rem 3rem;
+      position: relative;
+      align-items: center;
+      flex-direction: row;
+      img {
+        width: 50%;
+        order: 2;
+      }
+      .topbg {
+        position: absolute;
+        top: -43px;
+        right: 0;
+      }
+      .Details {
+        margin-top: 0rem;
+        h4 {
+          font-size: 1.5rem;
+          text-align: start;
+          margin: 1rem 0rem;
+        }
+        p {
+          color: $Very-Dark-Blue;
+          font-size: 0.8rem;
+        }
+      }
+      .SeeHowWorks {
+        justify-content: start;
+        p {
+          color: $Moderate-Cyan;
+        }
+      }
+      .quoteCard {
+        width: 80%;
+        background-color: white;
+        padding: 1rem;
+        img {
+          width: 14px;
+        }
+        .author {
+          .name {
+            order: 2;
+            h4 {
+              font-size: 0.8rem;
+            }
+            p {
+              font-size: 0.5rem;
+            }
+          }
+        }
+      }
+    }
+    .ThirdSection {
+      display: flex;
+      justify-content: start;
+      align-items: center;
+      text-align: start;
+      gap: 5rem;
+      .earlyAccess {
+        width: 90%;
+        padding-right: 2rem;
+      }
+      .Form2 {
+        width: 100%;
+      }
+      input {
+        padding: 0.5rem 1rem;
+        width: 100%;
+      }
+      button {
+        width: 50%;
+      }
+    }
+  }
+  footer {
+    .icons {
+      display: inline-block;
+      margin-right: 1rem;
+    }
+    .gridFooter {
+      display: grid;
+      grid-template-columns: auto auto auto auto;
+      margin-top: 2rem;
+    }
+    ul {
+      margin: 0rem;
+    }
+  }
+}
+@media (min-width: 1024px) {
+  header,
+  main,
+  footer {
+    padding: 3rem;
+  }
+  html {
+    font-size: 20px;
+  }
+  header {
+    img {
+      width: 20%;
+    }
+  }
+
+  main {
+    padding: 0rem;
+    .FirstSection {
+      padding: 0rem 3rem;
+      img {
+        margin-bottom: 0rem;
+      }
+      .Title {
+        .Form {
+          input {
+            padding: 0.8rem 1rem;
+          }
+        }
+      }
+    }
+    .SecondSection {
+      padding: 0rem 3rem;
+
+      gap: 4rem;
+      img {
+        width: 50%;
+        order: 2;
+      }
+
+      .Details {
+        h4 {
+          font-size: 1.1rem;
+          font-weight: bold;
+        }
+        p {
+          color: $Very-Dark-Blue;
+          font-size: 0.7rem;
+        }
+      }
+      .SeeHowWorks {
+        justify-content: start;
+        margin: 0.5rem 0rem;
+        p {
+          color: $Moderate-Cyan;
+        }
+      }
+      .quoteCard {
+        .author {
+          .name {
+            h4 {
+              font-size: 0.8rem;
+            }
+            p {
+              font-size: 0.5rem;
+            }
+          }
+        }
+      }
+    }
+    .ThirdSection {
+      padding: 0rem 3rem;
+      display: flex;
+      justify-content: start;
+      align-items: center;
+      text-align: start;
+      gap: 5rem;
+      .earlyAccess {
+        width: 90%;
+        padding-right: 2rem;
+      }
+      .Form2 {
+        width: 100%;
+      }
+      input {
+        padding: 0.5rem 1rem;
+        width: 100%;
+        max-width: 400px;
+      }
+      button {
+        width: 50%;
+        max-width: 250px;
+      }
+    }
+  }
+}
+@media (min-width: 1640px) {
+  body {
+    font-size: 60px;
+  }
+
+  header {
+    img {
+      width: 15%;
+    }
+  }
+
+  main {
+    padding: 0;
+    .FirstSection {
+      padding: 0rem 3rem;
+      img {
+        margin-bottom: 0rem;
+      }
+      .Title {
+        h1 {
+          font-size: 3rem;
+        }
+        p {
+          font-size: 2rem;
+        }
+        .Form {
+          align-items: center;
+          input {
+            padding: 2rem;
+            font-size: 1.5rem;
+            width: auto;
+            height: 130px;
+          }
+          button {
+            margin: 0;
+            margin-left: 1rem;
+            padding: 0rem 1rem;
+            height: 130px;
+            font-size: 2rem;
+
+            width: 350px;
+          }
+        }
+      }
+    }
+    .SecondSection {
+      padding: 0rem 3rem;
+      .Details {
+        h4 {
+          font-size: 3rem;
+        }
+        p {
+          font-size: 1.7rem;
+        }
+      }
+      .SeeHowWorks {
+        justify-content: start;
+        margin: 0.5rem 0rem;
+        img {
+          width: 50px;
+        }
+        p {
+          color: $Moderate-Cyan;
+          font-size: 1.7rem;
+        }
+      }
+      .quoteCard {
+        img {
+          width: 60px;
+        }
+        blockquote {
+          font-size: 2rem;
+        }
+        .author {
+          img {
+            width: 120px;
+          }
+          .name {
+            h4 {
+              font-size: 2rem;
+            }
+            p {
+              font-size: 1.5rem;
+            }
+          }
+        }
+      }
+    }
+    .ThirdSection {
+      .earlyAccess {
+        h3 {
+          font-size: 3rem;
+        }
+        p {
+          font-size: 2rem;
+          line-height: 1.5;
+        }
+      }
+      .Form2 {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+      }
+      input {
+        padding: 0rem 2rem;
+        font-size: 2rem;
+
+        width: auto;
+        height: 130px;
+        max-width: 900px;
+      }
+      button {
+        margin-top: 1rem;
+
+        padding: 0rem 1rem;
+        height: 130px;
+        font-size: 2rem;
+        max-width: 600px;
+        width: 100%;
+      }
+    }
+  }
+
+  footer {
+    img {
+      width: 12%;
+    }
+    .gridFooter {
+      img {
+        width: 50px;
+      }
+    }
   }
 }

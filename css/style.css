@@ -47,8 +47,9 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -313,5 +314,396 @@ footer .social-icons {
 footer .icon:hover {
   color: #3065f8;
   cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  header,
+  main,
+  footer {
+    width: 100%;
+    max-width: 100%;
+  }
+  body {
+    font-size: 20px;
+  }
+  header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 2rem 2rem;
+  }
+  header img {
+    width: 20%;
+  }
+  main {
+    padding: 0rem;
+  }
+  main .FirstSection {
+    text-align: start;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  main .FirstSection img {
+    width: 50%;
+    margin-bottom: 2rem;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  main .FirstSection .Title h1 {
+    margin: 2rem 0rem;
+    font-size: 1.5rem;
+  }
+  main .FirstSection .Title p {
+    color: #585989;
+    line-height: 2;
+    font-size: 0.8rem;
+    margin-bottom: 2rem;
+  }
+  main .FirstSection .Title .Form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  main .FirstSection .Title .Form input {
+    padding: 0.7rem 1rem;
+    width: auto;
+    height: auto;
+  }
+  main .FirstSection .Title .Form button {
+    padding: 0.5rem 0.5rem;
+    margin-left: 0.5rem;
+    margin-top: 0rem;
+    color: #f6f6fe;
+    width: auto;
+  }
+  main .SecondSection {
+    padding: 0rem 3rem;
+    position: relative;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  main .SecondSection img {
+    width: 50%;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  main .SecondSection .topbg {
+    position: absolute;
+    top: -43px;
+    right: 0;
+  }
+  main .SecondSection .Details {
+    margin-top: 0rem;
+  }
+  main .SecondSection .Details h4 {
+    font-size: 1.5rem;
+    text-align: start;
+    margin: 1rem 0rem;
+  }
+  main .SecondSection .Details p {
+    color: #070439;
+    font-size: 0.8rem;
+  }
+  main .SecondSection .SeeHowWorks {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+  }
+  main .SecondSection .SeeHowWorks p {
+    color: #3c9f8f;
+  }
+  main .SecondSection .quoteCard {
+    width: 80%;
+    background-color: white;
+    padding: 1rem;
+  }
+  main .SecondSection .quoteCard img {
+    width: 14px;
+  }
+  main .SecondSection .quoteCard .author .name {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  main .SecondSection .quoteCard .author .name h4 {
+    font-size: 0.8rem;
+  }
+  main .SecondSection .quoteCard .author .name p {
+    font-size: 0.5rem;
+  }
+  main .ThirdSection {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: start;
+    gap: 5rem;
+  }
+  main .ThirdSection .earlyAccess {
+    width: 90%;
+    padding-right: 2rem;
+  }
+  main .ThirdSection .Form2 {
+    width: 100%;
+  }
+  main .ThirdSection input {
+    padding: 0.5rem 1rem;
+    width: 100%;
+  }
+  main .ThirdSection button {
+    width: 50%;
+  }
+  footer .icons {
+    display: inline-block;
+    margin-right: 1rem;
+  }
+  footer .gridFooter {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto auto auto auto;
+        grid-template-columns: auto auto auto auto;
+    margin-top: 2rem;
+  }
+  footer ul {
+    margin: 0rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  header,
+  main,
+  footer {
+    padding: 3rem;
+  }
+  html {
+    font-size: 20px;
+  }
+  header img {
+    width: 20%;
+  }
+  main {
+    padding: 0rem;
+  }
+  main .FirstSection {
+    padding: 0rem 3rem;
+  }
+  main .FirstSection img {
+    margin-bottom: 0rem;
+  }
+  main .FirstSection .Title .Form input {
+    padding: 0.8rem 1rem;
+  }
+  main .SecondSection {
+    padding: 0rem 3rem;
+    gap: 4rem;
+  }
+  main .SecondSection img {
+    width: 50%;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  main .SecondSection .Details h4 {
+    font-size: 1.1rem;
+    font-weight: bold;
+  }
+  main .SecondSection .Details p {
+    color: #070439;
+    font-size: 0.7rem;
+  }
+  main .SecondSection .SeeHowWorks {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    margin: 0.5rem 0rem;
+  }
+  main .SecondSection .SeeHowWorks p {
+    color: #3c9f8f;
+  }
+  main .SecondSection .quoteCard .author .name h4 {
+    font-size: 0.8rem;
+  }
+  main .SecondSection .quoteCard .author .name p {
+    font-size: 0.5rem;
+  }
+  main .ThirdSection {
+    padding: 0rem 3rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: start;
+    gap: 5rem;
+  }
+  main .ThirdSection .earlyAccess {
+    width: 90%;
+    padding-right: 2rem;
+  }
+  main .ThirdSection .Form2 {
+    width: 100%;
+  }
+  main .ThirdSection input {
+    padding: 0.5rem 1rem;
+    width: 100%;
+    max-width: 400px;
+  }
+  main .ThirdSection button {
+    width: 50%;
+    max-width: 250px;
+  }
+}
+
+@media (min-width: 1640px) {
+  body {
+    font-size: 60px;
+  }
+  header img {
+    width: 15%;
+  }
+  main {
+    padding: 0;
+  }
+  main .FirstSection {
+    padding: 0rem 3rem;
+  }
+  main .FirstSection img {
+    margin-bottom: 0rem;
+  }
+  main .FirstSection .Title h1 {
+    font-size: 3rem;
+  }
+  main .FirstSection .Title p {
+    font-size: 2rem;
+  }
+  main .FirstSection .Title .Form {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  main .FirstSection .Title .Form input {
+    padding: 2rem;
+    font-size: 1.5rem;
+    width: auto;
+    height: 130px;
+  }
+  main .FirstSection .Title .Form button {
+    margin: 0;
+    margin-left: 1rem;
+    padding: 0rem 1rem;
+    height: 130px;
+    font-size: 2rem;
+    width: 350px;
+  }
+  main .SecondSection {
+    padding: 0rem 3rem;
+  }
+  main .SecondSection .Details h4 {
+    font-size: 3rem;
+  }
+  main .SecondSection .Details p {
+    font-size: 1.7rem;
+  }
+  main .SecondSection .SeeHowWorks {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    margin: 0.5rem 0rem;
+  }
+  main .SecondSection .SeeHowWorks img {
+    width: 50px;
+  }
+  main .SecondSection .SeeHowWorks p {
+    color: #3c9f8f;
+    font-size: 1.7rem;
+  }
+  main .SecondSection .quoteCard img {
+    width: 60px;
+  }
+  main .SecondSection .quoteCard blockquote {
+    font-size: 2rem;
+  }
+  main .SecondSection .quoteCard .author img {
+    width: 120px;
+  }
+  main .SecondSection .quoteCard .author .name h4 {
+    font-size: 2rem;
+  }
+  main .SecondSection .quoteCard .author .name p {
+    font-size: 1.5rem;
+  }
+  main .ThirdSection .earlyAccess h3 {
+    font-size: 3rem;
+  }
+  main .ThirdSection .earlyAccess p {
+    font-size: 2rem;
+    line-height: 1.5;
+  }
+  main .ThirdSection .Form2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+  }
+  main .ThirdSection input {
+    padding: 0rem 2rem;
+    font-size: 2rem;
+    width: auto;
+    height: 130px;
+    max-width: 900px;
+  }
+  main .ThirdSection button {
+    margin-top: 1rem;
+    padding: 0rem 1rem;
+    height: 130px;
+    font-size: 2rem;
+    max-width: 600px;
+    width: 100%;
+  }
+  footer img {
+    width: 12%;
+  }
+  footer .gridFooter img {
+    width: 50px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
