@@ -58,7 +58,7 @@ main {
       background-color: $Bright-Blue;
       border: none;
       padding: 0.5rem 2rem;
-      font-size:1rem;
+      font-size: 1rem;
       margin-top: 0.5rem;
       color: $Light-Grayish-Blue;
       width: 85%;
@@ -95,19 +95,26 @@ main {
     }
     .SeeHowWorks {
       text-align: center;
-      display: flex;
-      width: max-content;
+
       margin: 3rem 0rem;
+      display: flex;
       justify-content: center;
-      align-items: center;
-      border-bottom: 1px solid $Moderate-Cyan;
+      div {
+        display: flex;
+        justify-content: center;
+        width: fit-content;
+        border-bottom: 1px solid $Moderate-Cyan;
+      }
       p {
+        text-align: center;
         color: $Moderate-Cyan;
         display: inline-block;
         padding-right: 1rem;
+        padding-bottom: 0.5rem;
       }
       img {
-        width: 20px;
+        width: 28px;
+        padding-bottom: 0.5rem;
       }
     }
     .quoteCard {

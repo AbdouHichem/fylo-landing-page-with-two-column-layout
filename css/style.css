@@ -155,30 +155,39 @@ main .SecondSection .Details p {
 
 main .SecondSection .SeeHowWorks {
   text-align: center;
+  margin: 3rem 0rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
-  margin: 3rem 0rem;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+}
+
+main .SecondSection .SeeHowWorks div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   border-bottom: 1px solid #3c9f8f;
 }
 
 main .SecondSection .SeeHowWorks p {
+  text-align: center;
   color: #3c9f8f;
   display: inline-block;
   padding-right: 1rem;
+  padding-bottom: 0.5rem;
 }
 
 main .SecondSection .SeeHowWorks img {
-  width: 20px;
+  width: 28px;
+  padding-bottom: 0.5rem;
 }
 
 main .SecondSection .quoteCard {
