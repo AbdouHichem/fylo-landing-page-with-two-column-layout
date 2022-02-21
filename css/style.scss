@@ -10,13 +10,31 @@ header,
 main,
 footer {
   width: 95%;
-  max-width: 380px;
+  max-width: 480px;
 }
 
 ul {
   list-style: none;
 }
+header{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding:2rem 0rem;
+  img{
+    width: 25%;
+  }
+  ul{
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+    color: $Desaturated-Blue;
+  }
+}
 main {
+  .FirstSection{
+    
+  }
   .SecondSection{
     padding:2rem;
     margin-top: 3rem;
