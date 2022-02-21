@@ -36,11 +36,76 @@ header,
 main,
 footer {
   width: 95%;
-  max-width: 380px;
+  max-width: 480px;
 }
 
 ul {
   list-style: none;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2rem 0rem;
+}
+
+header img {
+  width: 25%;
+}
+
+header ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  gap: 1rem;
+  color: #585989;
+}
+
+main .FirstSection {
+  padding: 2rem;
+  margin-top: 3rem;
+  text-align: center;
+}
+
+main .FirstSection img {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+main .FirstSection h1 {
+  color: #070439;
+  margin: 2rem 0rem;
+}
+
+main .FirstSection p {
+  color: #585989;
+  line-height: 2;
+  margin-bottom: 2rem;
+}
+
+main .FirstSection input {
+  padding: 0.5rem 1rem;
+  width: 85%;
+  border: 1px solid #070439;
+}
+
+main .FirstSection button {
+  background-color: #3065f8;
+  border: none;
+  padding: 0.5rem 2rem;
+  font-size: 1rem;
+  margin-top: 0.5rem;
+  color: #f6f6fe;
+  width: 85%;
 }
 
 main .SecondSection {
@@ -127,7 +192,7 @@ main .SecondSection .quoteCard img {
 }
 
 main .SecondSection .quoteCard blockquote {
-  font-size: .8rem;
+  font-size: 0.8rem;
   margin: 1rem 0rem;
 }
 
@@ -170,7 +235,7 @@ main .SecondSection .quoteCard .author .name h4 {
 }
 
 main .SecondSection .quoteCard .author .name p {
-  font-size: .7rem;
+  font-size: 0.7rem;
   color: #070439;
 }
 
@@ -186,23 +251,23 @@ main .ThirdSection h3 {
 }
 
 main .ThirdSection p {
-  font-size: .8rem;
+  font-size: 0.8rem;
   margin: 1rem 0rem;
   line-height: 1.2rem;
 }
 
 main .ThirdSection input {
-  padding: .5rem 1rem;
-  width: 260px;
+  padding: 0.5rem 1rem;
+  width: 85%;
 }
 
 main .ThirdSection button {
   background-color: #3065f8;
   border: none;
-  padding: .5rem 4rem;
-  margin-top: .5rem;
+  padding: 0.5rem 0rem;
+  margin-top: 0.5rem;
   color: #f6f6fe;
-  width: 260px;
+  width: 85%;
 }
 
 footer {
@@ -221,7 +286,7 @@ footer ul {
 }
 
 footer li {
-  margin: .5rem 0rem;
+  margin: 0.5rem 0rem;
 }
 
 footer .social-icons {

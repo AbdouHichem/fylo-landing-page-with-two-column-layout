@@ -16,15 +16,15 @@ footer {
 ul {
   list-style: none;
 }
-header{
+header {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding:2rem 0rem;
-  img{
+  padding: 2rem 0rem;
+  img {
     width: 25%;
   }
-  ul{
+  ul {
     display: flex;
     justify-content: flex-end;
     gap: 1rem;
@@ -32,88 +32,115 @@ header{
   }
 }
 main {
-  .FirstSection{
-    
+  .FirstSection {
+    padding: 2rem;
+    margin-top: 3rem;
+    text-align: center;
+    img {
+      width: 100%;
+      margin-bottom: 2rem;
+    }
+    h1 {
+      color: $Very-Dark-Blue;
+      margin: 2rem 0rem;
+    }
+    p {
+      color: $Desaturated-Blue;
+      line-height: 2;
+      margin-bottom: 2rem;
+    }
+    input {
+      padding: 0.5rem 1rem;
+      width: 85%;
+      border: 1px solid $Very-Dark-Blue;
+    }
+    button {
+      background-color: $Bright-Blue;
+      border: none;
+      padding: 0.5rem 2rem;
+      font-size:1rem;
+      margin-top: 0.5rem;
+      color: $Light-Grayish-Blue;
+      width: 85%;
+    }
   }
-  .SecondSection{
-    padding:2rem;
+  .SecondSection {
+    padding: 2rem;
     margin-top: 3rem;
     position: relative;
     display: flex;
     align-items: center;
     flex-direction: column;
-    justify-content:center;
-    background-color:$Light-Grayish-Blue;
-    img{
-      width:100%;
-
+    justify-content: center;
+    background-color: $Light-Grayish-Blue;
+    img {
+      width: 100%;
     }
-    .topbg{
+    .topbg {
       position: absolute;
       top: -43px;
-      right:0;
+      right: 0;
     }
-    .Details{
-      padding:2rem 0rem;
-      margin-top:3rem;
-      h4{
-        color:$Very-Dark-Blue;
+    .Details {
+      padding: 2rem 0rem;
+      margin-top: 3rem;
+      h4 {
+        color: $Very-Dark-Blue;
         text-align: center;
         margin: 2rem 0rem;
       }
-      p{
+      p {
         color: $Light-Gray;
       }
     }
-    .SeeHowWorks{
+    .SeeHowWorks {
       text-align: center;
       display: flex;
-      width:max-content;
+      width: max-content;
       margin: 3rem 0rem;
       justify-content: center;
       align-items: center;
-      border-bottom : 1px solid $Moderate-Cyan;
-      p{
+      border-bottom: 1px solid $Moderate-Cyan;
+      p {
         color: $Moderate-Cyan;
         display: inline-block;
         padding-right: 1rem;
-
       }
-      img{
+      img {
         width: 20px;
       }
     }
-    .quoteCard{
-      width:100%;
-      background-color:white;
+    .quoteCard {
+      width: 100%;
+      background-color: white;
       padding: 1rem;
-      img{
-        width:14px;
+      img {
+        width: 14px;
       }
-      blockquote{
-        font-size: .8rem;
+      blockquote {
+        font-size: 0.8rem;
         margin: 1rem 0rem;
       }
-      .author{
-        display:flex;
-        justify-content:flex-start;
-        align-items:center;
-        img{
+      .author {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        img {
           width: 50px;
           border-radius: 3rem;
           margin-right: 1.5em;
         }
-        .name{
+        .name {
           display: flex;
-          justify-content:center;
-          align-items:flex-start;
+          justify-content: center;
+          align-items: flex-start;
           flex-direction: column;
-          h4{
+          h4 {
             margin: 0rem;
           }
-          p{
-            font-size: .7rem;
-            color:$Very-Dark-Blue;
+          p {
+            font-size: 0.7rem;
+            color: $Very-Dark-Blue;
           }
         }
       }
@@ -121,54 +148,51 @@ main {
   }
   .ThirdSection {
     text-align: center;
-    background-color:$Desaturated-Blue;
+    background-color: $Desaturated-Blue;
     padding: 3rem 4rem;
     color: $Light-Grayish-Blue;
-    
-    h3{
-      
+
+    h3 {
       margin: 1rem 0rem;
     }
-    p{
-      font-size:.8rem;
+    p {
+      font-size: 0.8rem;
       margin: 1rem 0rem;
-      line-height:1.2rem;
+      line-height: 1.2rem;
     }
-    input{
-      padding:.5rem 1rem;
-      width: 260px;
+    input {
+      padding: 0.5rem 1rem;
+      width: 85%;
     }
-    button{
-      background-color:$Bright-Blue;
+    button {
+      background-color: $Bright-Blue;
       border: none;
-      padding: .5rem 4rem;
-      margin-top: .5rem;
+      padding: 0.5rem 0rem;
+      margin-top: 0.5rem;
       color: $Light-Grayish-Blue;
-      width: 260px;
+      width: 85%;
     }
   }
 }
-footer{
+footer {
   padding: 3rem 3rem;
   background-color: $Very-Dark-Blue;
-  color:$Light-Gray;
-  .icons{
+  color: $Light-Gray;
+  .icons {
     display: inline-block;
     margin-right: 1rem;
   }
-  ul{
+  ul {
     margin: 3rem 0rem;
   }
-  li{
-    margin: .5rem 0rem;
-  
+  li {
+    margin: 0.5rem 0rem;
   }
-  .social-icons{
+  .social-icons {
     text-align: center;
-    
   }
-  .icon:hover{
-      color: $Bright-Blue;
-      cursor: pointer;
-    }
+  .icon:hover {
+    color: $Bright-Blue;
+    cursor: pointer;
+  }
 }
